@@ -18,8 +18,10 @@ You will need the following CSV files:
 ## How to run
 Run this in CMD
 ```bash
-python agent_performance.py --roster agent_roster.csv --logs call_logs.csv --summary disposition_summary.csv
+python dpd.py --roster agent_roster.csv --logs call_logs.csv --summary disposition_summary.csv
 ```
+Python Code is in `dpd.py`
+
 ---
 
 ## Output Columns in Summary

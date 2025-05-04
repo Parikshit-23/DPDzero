@@ -20,6 +20,7 @@ Run this in CMD
 ```bash
 python agent_performance.py --roster agent_roster.csv --logs call_logs.csv --summary disposition_summary.csv
 ```
+---
 
 ## Output Columns in Summary
 The script generates a CSV with:
@@ -34,3 +35,43 @@ The script generates a CSV with:
 8. `avg_call_duration_min`
 9. `presence`
 10. `Connect_Rate`
+
+---
+
+## Slack-style Summary
+For the hardcoded date 2025-04-28, the script prints:
+```yaml
+Agent Summary for 2025-04-28
+Top Performer: John Doe (85.0% connect rate)
+Total Active Agents: 12
+Average Duration: 4.57 min
+```
+---
+
+## Logging
+All info and error logs are written to:
+
+```lua
+agent_analysis.log
+```
+Logging Format
+```vbnet
+2025-05-04 16:24:22,100 - INFO - Files loaded successfully.
+2025-05-04 16:24:22,103 - ERROR - Error merging data: 'call_id'
+```
+
+---
+
+## Directory Structure
+
+```lua
+.
+├── agent_performance.py
+├── agent_roster.csv
+├── call_logs.csv
+├── disposition_summary.csv
+├── agent_performance_summary.csv
+├── agent_analysis.log
+└── README.md
+```
+---

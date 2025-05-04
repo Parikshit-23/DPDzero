@@ -16,6 +16,6 @@ You will need the following CSV files:
 ---
 
 ## How to run
-'''console
+```console
 python agent_performance.py --roster agent_roster.csv --logs call_logs.csv --summary disposition_summary.csv
-'''
+```

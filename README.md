@@ -20,3 +20,17 @@ Run this in CMD
 ```bash
 python agent_performance.py --roster agent_roster.csv --logs call_logs.csv --summary disposition_summary.csv
 ```
+
+## Output Columns in Summary
+The script generates a CSV with:
+
+1. agent_id
+2. users_first_name
+3. users_last_name
+4. call_date
+5. total_calls
+6. unique_loans_contacted
+7. completed_calls
+8. avg_call_duration_min
+9. presence
+10. Connect_Rate
